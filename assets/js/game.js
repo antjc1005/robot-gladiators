@@ -1,1 +1,1 @@
-window.alert("this is an alert! JavaScript is Running!");
+window.alert("THIS IS AN ALERT");
