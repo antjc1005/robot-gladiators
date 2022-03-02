@@ -10,7 +10,9 @@ var enemyAttack = 12;
 
 
 var fight = function(enemyName){
-   
+   //repeat and execute as long as enemy-robot is still alive
+   while(enemyHealth > 0) {
+       //place fight function code block here
     //window.alert("Welcome to Robot Gladiators!");
     var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP to choose.");
     console.log(promptFight);
@@ -60,21 +62,15 @@ var fight = function(enemyName){
     } else{
         window.alert("You need to choose a valid option. Try again!");
     }
-//game states
+}   
 
-//"win"- player robot has defeated all enemy-robots
-
-//  *fight all enemy-robots
-
-//  *defeat each enemy-robot
-
-// "lose" - player robot's health is zero or less
-
-  
 };
 
 for(var i = 0; i < enemyNames.length; i++) {
-    fight(enemyNames[i]);
+    var pickedEnemyName = enemyNames[i];
+    enemyHealth = 50;
+    //call fight function with enemy-robot
+    fight(pickedEnemyName);
 }
 
 
