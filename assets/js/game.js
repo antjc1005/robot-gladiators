@@ -104,5 +104,8 @@ else{
     window.alert("Thank You for playing Robot Gladiators! Come back soon!");
 }
 };
+var shop = function() {
+    console.log("entered the shop");
+};
 
 startGame();
